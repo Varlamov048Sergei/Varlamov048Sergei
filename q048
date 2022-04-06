@@ -1,0 +1,13 @@
+binary_free* search_delet(int data, binary_free* rem) {
+	while (data != rem->info) {
+		if (data >= rem->info) {
+			rem = rem->right;
+		}
+		else {
+			if (data <= rem->info) {
+				rem = rem->left;
+			}
+		}
+	}
+	return rem;
+}
